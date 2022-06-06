@@ -77,7 +77,7 @@ form label{
 .img-container{
     position: relative;
     display: flex;
-    width: 350px;
+    width: 300px;
     gap: 10px;
     padding: 20px;
     margin: 0 auto;
@@ -85,6 +85,7 @@ form label{
 
 .poke-img{
     width: 100%;
+    height: fit-content;
     border-radius: 50%;
     cursor: pointer;
 }
@@ -95,7 +96,6 @@ form label{
     border-radius: 50%;
     cursor: pointer;
 }
-
 
 .poke-id{
     font-size: 20px;
