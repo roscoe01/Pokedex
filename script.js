@@ -68,8 +68,10 @@ const setCardColor = types => {
     const colorTwo = types[1] ? typeColors[types[1].type.name] : typeColors.default; // Con el operador ternario Si el pokemon tiene mas de un tipo, se le asigna el color correspondiente al segundo tipo, si no, se le asigna el color default.
     pokeSprite1.style.background = `radial-gradient(${colorTwo} 33%, ${colorOne} 33%)`;
     pokeSprite1.style.backgroundSize = '5px 5px';
+    pokeSprite1.style.borderRadius = '50%';
     pokeSprite2.style.background = `radial-gradient(${colorTwo} 33%, ${colorOne} 33%)`;
     pokeSprite2.style.backgroundSize = '5px 5px';
+    pokeSprite2.style.borderRadius = '50%';
 }
 
 
@@ -101,7 +103,7 @@ const renderizarPokemonStats = stats => {
 }
 
 const renderNotFound = () => {
-    pokeName.textContent = 'Pokemon No encontrado';
+    pokeName.textContent = 'Pokemon No encontrado :(';
     pokeSprite1.setAttribute('src', 'https://c.tenor.com/WUEKqaYhVsUAAAAC/pokemon-sad.gif');
     pokeSprite1.style.background =  '#fff';
     pokeSprite1.style.borderRadius = '0px';
